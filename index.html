@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="2027 立山記錄簿">
+  <meta name="theme-color" content="#1C2740">
+  <meta name="description" content="2027 大阪→京都→立山黑部→長野→東京 行程記錄簿">
+  <title>2027 立山記錄簿</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="install-banner" class="install-banner" hidden>
+    <p>用 Safari 開呢頁，撳分享鈕再揀「加到主畫面」，就可以好似 app 咁用，仲可離線睇。</p>
+    <button type="button" id="dismiss-install">知喇</button>
+  </div>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">2027 行程記錄簿</p>
+      <h1 id="page-title">行程</h1>
+    </div>
+  </header>
+  <main id="app" class="app"></main>
+  <nav class="tabbar" aria-label="主要分類">
+    <button class="tab is-active" data-tab="home" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span>行程</span>
+    </button>
+    <button class="tab" data-tab="tickets" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a1.5 1.5 0 1 0 0 3v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a1.5 1.5 0 1 0 0-3z"/></svg>
+      <span>票務</span>
+    </button>
+    <button class="tab" data-tab="kyoto" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1.8 2.4 3 4.4 3 6.2A3 3 0 1 1 9 9.2C9 7.4 10.2 5.4 12 3zm-6.5 14.5c2-.8 3.8-1.5 6.5-1.5s4.5.7 6.5 1.5C20.2 19.2 17.4 21 12 21s-8.2-1.8-6.5-3.5z"/></svg>
+      <span>京都</span>
+    </button>
+    <button class="tab" data-tab="alps" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 19h20L14.5 6.5 11 12 8.5 8.5 2 19z"/></svg>
+      <span>阿爾卑斯</span>
+    </button>
+    <button class="tab" data-tab="todo" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h10"/><path d="M4 6.2 5.6 8 8.2 4.8" fill="none"/></svg>
+      <span>待辦</span>
+    </button>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -348,6 +348,7 @@ let alpsSub = "toyama";
 function render() {
   document.getElementById("page-title").textContent = TITLES[tab];
   const app = document.getElementById("app");
+  app.dataset.view = tab;
   if (tab === "home") app.innerHTML = renderHome();
   else if (tab === "tickets") app.innerHTML = renderTickets();
   else if (tab === "kyoto") app.innerHTML = renderKyoto(kyotoFilter);
